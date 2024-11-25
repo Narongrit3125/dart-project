@@ -1,5 +1,5 @@
 import 'dart:math';
-import 'dart:io';
+
 
 String generateRandomPassword(int length) {
   const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#\$%^&*()_-+=<>?';
@@ -17,8 +17,7 @@ String generateRandomPassword(int length) {
 
 void main() {
   // กำหนดความยาวของรหัสผ่าน
-  print("Enter the length of the password:");
-  int length = int.parse(stdin.readLineSync()!);
+ var length = 8;
 
   // สร้างรหัสผ่านแบบสุ่ม
   String randomPassword = generateRandomPassword(length);
